@@ -1,9 +1,8 @@
 name: CI/CD Test Job from Codeam Labs
 
-on:
-
-  branch: 
-    - main
+on: 
+  push:
+    branch: [main]
 
 jobs:
   test-job:
