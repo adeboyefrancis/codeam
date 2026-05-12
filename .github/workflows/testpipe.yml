@@ -8,6 +8,6 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - run: |
-        echo "Hello world from CodeDamn" \
-        tree
+      echo "Hello world from CodeDamn" \
+      tree
   
