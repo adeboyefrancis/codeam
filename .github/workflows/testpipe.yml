@@ -1,0 +1,14 @@
+name: CI/CD Test Job from Codeam Labs
+
+on:
+
+  branch: 
+    - main
+
+jobs:
+  test-job:
+    runs-on: ubuntun-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: echo "Hello from Codedamn Labs"
+  
