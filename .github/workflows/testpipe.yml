@@ -19,3 +19,9 @@ jobs:
 
       - name: Hello Message
         run: echo "Hello from CodeDamn Labs"
+
+      - name: Install Dependencies
+      - run: npm ci
+
+      - name: Build Project
+      - run: npm run build
