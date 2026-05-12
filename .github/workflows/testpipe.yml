@@ -4,8 +4,10 @@ on: [push]
 
 jobs:
   test-job:
-    runs-on: ubuntun-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - run: tree
+      - run: |
+        echo "Hello world from CodeDamn" \
+        tree
   
