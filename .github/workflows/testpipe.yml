@@ -3,9 +3,19 @@ name: CI/CD Test Job from Codeam Labs
 on: [push]
 
 jobs:
-  test-job:
+  setup:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - run: echo "Hello from CodeDamn Labs"
-  
+      - name: Checkout Workspace on Ubuntu
+        uses: actions/checkout@v4 
+
+      - name: Use Runtime Nodejs 20+ and above
+        uses: actions/setup-node@v4 
+        with:
+          node-version: '20'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Hello Message
+        run: echo "Hello from CodeDamn Labs"
